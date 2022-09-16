@@ -1,0 +1,27 @@
+{
+  "pages": [
+    {
+      "id": "Riepilogo",
+      "isDefault": true
+    },
+    {
+      "id": "Inserisci Nota Spese",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#F4FFDE",
+  "icon": "basketball",
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "publishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

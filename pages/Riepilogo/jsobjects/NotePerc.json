@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "NotePerc",
+    "pageId": "Riepilogo",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun1: () => {\n\t\tNoteMese.run();\n\t\tNoteMesePrec.run();\n\t\t\n\t\tlet divisione = ((NoteMese.data[0].count)/(NoteMesePrec.data[0].count))-1;\n\t\t\n\t\tlet perc = (divisione)*100;\n\t\tlet notes = NoteMese.data[0].count - NoteMesePrec.data[0].count;\n\t\t\n\t\tif(notes > 0)\n\t\t{\n\t\t\tvar str = notes + ' in più rispetto al mese attuale';\n\t\t}\n\t\telse\n\t\t{\n\t\t\tstr = notes + ' in meno rispetto al mese attuale';\n\t\t}\n\t\t\n\t\tif(perc > 100)\n\t\t{\n\t\t\tvar percentage = perc + '% in più rispetto al mese precedente';\n\t\t}\n\t\telse\n\t\t{\n\t\t\tpercentage = perc + '% in meno rispetto al mese precedente';\n\t\t}\n\t\t\n\t\tstoreValue('percentage', percentage, false);\n\t\tstoreValue('notes', str, false);\n\t\t\n\t\treturn [divisione, perc];\n\t}\n}",
+    "variables": []
+  },
+  "id": "Riepilogo_NotePerc",
+  "deleted": false,
+  "gitSyncId": "630f7ac3c3ad33319892bba3_631f44115bfdc733d766b336"
+}
